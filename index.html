@@ -6,152 +6,172 @@
     <title>Shubham Sharma | CS & Data Science Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo font-mono">SHARMA.</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume" class="btn-accent">Resume</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-
-    <header id="hero">
-        <div class="hero-content">
-            <h1 class="big-title">HI, I'M <span class="text-accent">SHUBHAM</span>.</h1>
-            <h2 class="subtitle font-mono">CS STUDENT & AI RESEARCHER</h2>
-            <p class="hero-text">Specializing in Data Intensive Computing, Machine Learning, and building intelligent systems that solve real-world problems.</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Header Section with Name, Title, and Headshot -->
+    <header id="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="header-name">Shubham Sharma</h1>
+                <h2 class="header-title">CS Student | ML / AI Researcher</h2>
+            </div>
+            <div class="header-image-wrapper">
+                <img src="assets/images/profile-pic.jpg" alt="Shubham Sharma" class="header-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="profile-placeholder" style="display: none;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <!-- Vertical Navigation Buttons -->
+                <div class="vertical-nav">
+                    <a href="#projects" class="nav-btn">Projects</a>
+                    <a href="#experience" class="nav-btn">Experience</a>
+                    <a href="#skills" class="nav-btn">Skills</a>
+                    <a href="#contact" class="nav-btn">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <div class="section-header">
-            <h3 class="font-mono text-accent">01.</h3>
-            <h2>About Me</h2>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">I'm a Computer Science undergraduate at the University at Buffalo (Class of '26), pursuing a certificate in Data Intensive Computing. My passion lies at the intersection of research and engineering. Currently, I work as a Research Assistant at UB's School of Engineering, exploring how Generative AI can assist in Infant Affective Computing. I specialize in machine learning, data analysis, and building intelligent systems that solve real-world problems.</p>
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                [cite_start]<p>I am currently a Computer Science undergraduate at the <strong>University at Buffalo</strong> (Class of '26), pursuing a certificate in Data Intensive Computing[cite: 5, 6].</p> 
-                <p>My passion lies at the intersection of research and engineering. [cite_start]Currently, I work as a <strong>Research Assistant</strong> at UB's School of Engineering, exploring how Generative AI can assist in Infant Affective Computing[cite: 21, 24]. [cite_start]Before this, I honed my analytical skills leading student engagement initiatives at UBC[cite: 18].</p>
-                [cite_start]<p>I also have practical experience developing financial microservices through a virtual internship with JPMorgan Chase and strategy analytics with the Tata Group[cite: 28, 34].</p>
-            </div>
-            <div class="about-img">
-                <img src="assets/images/profile-pic.jpg" alt="Shubham Sharma">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <button class="skill-btn">Python</button>
+                <button class="skill-btn">SQL</button>
+                <button class="skill-btn">TensorFlow</button>
+                <button class="skill-btn">Scikit-Learn</button>
+                <button class="skill-btn">Pandas</button>
+                <button class="skill-btn">PyTorch</button>
+                <button class="skill-btn">Machine Learning</button>
+                <button class="skill-btn">Data Visualization</button>
+                <button class="skill-btn">Statistical Analysis</button>
+                <button class="skill-btn">React</button>
+                <button class="skill-btn">TypeScript</button>
+                <button class="skill-btn">Java</button>
+                <button class="skill-btn">Go</button>
+                <button class="skill-btn">AWS</button>
+                <button class="skill-btn">Docker</button>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="container bg-darker">
-        <div class="section-header text-center">
-            <h2>Technical Arsenal</h2>
-            <p class="font-mono text-accent">Languages & Frameworks</p>
-        </div>
-        <div class="grid-cards">
-            <div class="card">
-                <i class="fas fa-brain card-icon"></i>
-                <h4>AI & ML</h4>
-                [cite_start]<p>TensorFlow, PyTorch, Scikit-learn, OpenCV, Hugging Face, LLMs (LLaMA 3, BERT)[cite: 11, 12, 51].</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-database card-icon"></i>
-                <h4>Data Engineering</h4>
-                [cite_start]<p>SQL (MySQL, PostgreSQL), MongoDB, Pandas, NumPy, Tableau, Power BI[cite: 10, 11, 12].</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-code card-icon"></i>
-                <h4>Development</h4>
-                [cite_start]<p>Python, Java, Go, React, TypeScript, Spring Boot, MATLAB, R[cite: 9, 30].</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-cloud card-icon"></i>
-                <h4>Cloud & DevOps</h4>
-                [cite_start]<p>AWS (Lambda, EC2), Azure, Google Cloud, Git, Docker/Microservices[cite: 12].</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <div class="section-header">
-            <h3 class="font-mono text-accent">02.</h3>
-            <h2>Featured Projects</h2>
-        </div>
-        <div class="grid-projects">
-            
-            <div class="project-card">
-                <div class="project-info">
-                    <h4 class="font-mono text-accent">Python / LLaMA 3 / Clustering</h4>
-                    <h3>BetGenie: Baseball AI</h3>
-                    <p>An AI-driven prediction app analyzing player stats, weather, and park factors. [cite_start]Utilizes custom feature engineering and LLaMA 3 integration to deliver precise game insights[cite: 49, 51].</p>
-                    <div class="project-links font-mono">
-                        <a href="#">GitHub <i class="fab fa-github"></i></a>
-                    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">BetGenie: Baseball AI</h3>
+                    <p class="project-tags">Time Series Forecasting, Python</p>
+                    <p class="project-description">An AI-driven prediction app analyzing player stats, weather, and park factors. Utilizes custom feature engineering and LLaMA 3 integration to deliver precise game insights.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">MeetingMetric AI</h3>
+                    <p class="project-tags">Deep Learning, TensorFlow</p>
+                    <p class="project-description">A productivity tool for HR teams that analyzes meeting transcripts. Uses Transformer-based models to score participant engagement and sentiment (0-1 scale).</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Mathquiz App</h3>
+                    <p class="project-tags">React, D3.js</p>
+                    <p class="project-description">An NLP application that converts handwritten math questions into text using OCR and searches for solutions. Won 3rd place in a Xiaomi-sponsored competition.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-
-             <div class="project-card">
-                <div class="project-info">
-                    <h4 class="font-mono text-accent">NLP / Hugging Face</h4>
-                    <h3>MeetingMetric AI</h3>
-                    <p>A productivity tool for HR teams that analyzes meeting transcripts. [cite_start]Uses Transformer-based models to score participant engagement and sentiment (0-1 scale)[cite: 45, 47].</p>
-                    <div class="project-links font-mono">
-                        <a href="#">GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <h4 class="font-mono text-accent">TensorFlow / OCR</h4>
-                    <h3>Mathquiz App</h3>
-                    <p>An NLP application that converts handwritten math questions into text using OCR and searches for solutions. [cite_start]Won 3rd place in a Xiaomi-sponsored competition[cite: 41, 43, 44].</p>
-                    <div class="project-links font-mono">
-                        <a href="#">GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section id="resume" class="container bg-darker text-center">
-        <div class="section-header">
-            <h2>Resume</h2>
-            <p>Preview or download my full credentials.</p>
-        </div>
-
-        <div class="resume-preview-container">
-            <object data="assets/documents/Shubham_resume.pdf" type="application/pdf" width="100%" height="100%">
-                <p>Your browser does not support PDF embedding. <a href="assets/documents/Shubham_resume.pdf">Download the PDF here.</a></p>
-            </object>
-        </div>
-
-        <div class="resume-download mt-4">
-            <a href="assets/documents/Shubham_resume.pdf" download="Shubham_Sharma_Resume.pdf" class="btn btn-large font-mono">
-                <i class="fas fa-download"></i> Download Resume
-            </a>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3 class="experience-title">Research Assistant | University at Buffalo (2024 - Present)</h3>
+                    <ul class="experience-details">
+                        <li>Exploring how Generative AI can assist in Infant Affective Computing</li>
+                        <li>Developing and implementing ML models for research projects</li>
+                        <li>Collaborating with faculty on cutting-edge AI research</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Virtual Intern | JPMorgan Chase (2023)</h3>
+                    <ul class="experience-details">
+                        <li>Developed financial microservices and applications</li>
+                        <li>Gained practical experience in enterprise software development</li>
+                        <li>Contributed to real-world financial technology solutions</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Strategy Analytics | Tata Group (2022 - 2023)</h3>
+                    <ul class="experience-details">
+                        <li>Conducted data research and analysis for business strategies</li>
+                        <li>Developed analytical models to support decision-making</li>
+                        <li>Led student engagement initiatives and analytical projects</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/shubham-sharma" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:sharma.m.shubhamx@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <div class="resume-thumbnail" onclick="window.open('assets/documents/Shubham_resume.pdf', '_blank')">
+                    <object data="assets/documents/Shubham_resume.pdf" type="application/pdf" class="resume-pdf-preview">
+                        <div class="resume-pdf-placeholder">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Shubham Sharma</p>
+                            <p class="resume-subtitle">Resume</p>
+                        </div>
+                    </object>
+                    <div class="resume-overlay">
+                        <i class="fas fa-eye"></i>
+                        <span>View Resume</span>
+                    </div>
+                </div>
+                <a href="assets/documents/Shubham_resume.pdf" download="Shubham_Sharma_Resume.pdf" class="download-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
         </div>
-        <p class="font-mono">Built by Shubham Sharma &copy; 2026</p>
-    </footer>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title text-center">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="social-icons">
+                    <a href="mailto:sharma.m.shubhamx@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-sharma" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sshubh4" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="contact-text">Open to opportunities in data, AI, and quantitative roles.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
