@@ -330,6 +330,7 @@ h1 {
     border: 1px solid rgba(255,255,255,0.1);
     display: flex; align-items: center; justify-content: center;
     color: #fff; cursor: pointer; transition: 0.3s;
+    text-decoration: none;
 }
 .social-circle:hover { background: #fff; color: #000; }
 .footer p { font-size: 0.8rem; color: #555; }
