@@ -1,173 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Sharma | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Shubham Sharma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header id="home" class="hero-section">
-        
-        <div class="hero-text">
-            <h1 class="name">Shubham Sharma</h1>
-            <h2 class="role">Data Scientist | AI Researcher</h2>
-            
-            <div class="bio-box">
-                <h3 class="section-label">About Me</h3>
-                <p>I am a data-driven professional specializing in <strong>Machine Learning</strong> and <strong>Quantitative Analysis</strong>. Currently working on Generative AI for Infant Affective Computing at the University at Buffalo.</p>
-                <p>I focus on transforming theoretical models into impactful, real-world solutions.</p>
-            </div>
-        </div>
+<!-- Floating Sidebar -->
+<nav class="floating-nav">
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-        <div class="hero-visual">
-            <div class="image-wrapper">
-                <img src="assets/images/profile-pic.jpg" alt="Shubham Sharma" class="profile-img">
-                <div class="fade-overlay"></div> </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Shubham Sharma</h1>
+    <p class="subtitle">Quantitative Data Engineering · AI · Systems</p>
 
-            <nav class="floating-nav">
-                <a href="#projects" class="nav-pill">Projects</a>
-                <a href="#experience" class="nav-pill">Experience</a>
-                <a href="#skills" class="nav-pill">Skills</a>
-                <a href="#contact" class="nav-pill">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <h3>About Me</h3>
+    <p>
+      Computer Science graduate with a strong foundation in machine learning,
+      quantitative modeling, and data-intensive systems. My work spans applied
+      research with large language models, simulation-based feature evaluation,
+      and analytics inspired by quantitative trading environments.
+    </p>
+  </div>
 
-    <main class="content-container">
+  <div class="hero-image">
+    <img src="assets/profile.jpg" alt="Portrait" />
+  </div>
+</section>
 
-        <section id="skills" class="section-block">
-            <h3 class="section-label">Skills</h3>
-            <div class="skills-wrapper">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">Scikit-Learn</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Data Visualization</span>
-                <span class="skill-tag">Quantitative Finance</span>
-            </div>
-        </section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="tags">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Machine Learning</span>
+    <span>Quantitative Finance</span>
+    <span>LLMs</span>
+    <span>PyTorch</span>
+    <span>Data Engineering</span>
+    <span>Distributed Systems</span>
+  </div>
+</section>
 
-        <section id="projects" class="section-block">
-            <h3 class="section-label">Projects</h3>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="card-content">
-                        <h4>BetGenie: Baseball AI</h4>
-                        <span class="tech-sub">LLaMA 3, Python, Clustering</span>
-                        <p class="card-desc">AI-driven prediction app analyzing player stats & weather to deliver precise game insights.</p>
-                    </div>
-                    <a href="#" class="btn-small">View Project</a>
-                </div>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h4>LLM Research Screening Pipeline</h4>
+      <p>SBERT · LLaMA · Clustering-based labeling</p>
+    </div>
+    <div class="card">
+      <h4>Baseball Analytics Engine</h4>
+      <p>Simulation · Feature Backtesting · ML</p>
+    </div>
+    <div class="card">
+      <h4>AI Meeting Intelligence Tool</h4>
+      <p>Transformers · NLP · Dashboards</p>
+    </div>
+  </div>
+</section>
 
-                <div class="project-card">
-                    <div class="card-content">
-                        <h4>MeetingMetric AI</h4>
-                        <span class="tech-sub">NLP, Hugging Face, Transformers</span>
-                        <p class="card-desc">Productivity tool scoring participant engagement and sentiment in meeting transcripts.</p>
-                    </div>
-                    <a href="#" class="btn-small">View Project</a>
-                </div>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="item">
+      <h4>Research Assistant — University at Buffalo</h4>
+      <span>2025 – Present</span>
+    </div>
+    <div class="item">
+      <h4>Advanced Software Engineering — JPMorgan Chase</h4>
+      <span>2025</span>
+    </div>
+    <div class="item">
+      <h4>Data Analytics — Tata Group</h4>
+      <span>2025</span>
+    </div>
+  </div>
+</section>
 
-                <div class="project-card">
-                    <div class="card-content">
-                        <h4>Mathquiz OCR</h4>
-                        <span class="tech-sub">TensorFlow, Computer Vision</span>
-                        <p class="card-desc">Converts handwritten math problems into text for instant solution searching.</p>
-                    </div>
-                    <a href="#" class="btn-small">View Project</a>
-                </div>
+<!-- RESUME -->
+<section id="resume" class="section resume">
+  <h2>Resume</h2>
+  <div class="resume-container">
+    <iframe src="assets/resume.pdf"></iframe>
+    <div class="resume-actions">
+      <a href="assets/resume.pdf" download>Download Resume</a>
+      <a href="assets/resume.pdf" target="_blank">Open Fullscreen</a>
+    </div>
+  </div>
+</section>
 
-            </div>
-        </section>
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Get in Touch</h2>
+  <p>sharma.m.shubhamx@gmail.com</p>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/shubham-sharma-273ab4216/">LinkedIn</a>
+    <a href="https://github.com/">GitHub</a>
+  </div>
+</section>
 
-        <section id="experience" class="section-block">
-            <h3 class="section-label">Experience</h3>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Research Assistant | University at Buffalo</h4>
-                        <span class="date">2025 - Present</span>
-                        <ul>
-                            <li>Developing Generative AI models for Infant Affective Computing.</li>
-                            <li>Leveraging LLMs to evaluate research and filter insights.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Software Engineering Intern | JPMorgan Chase</h4>
-                        <span class="date">May 2025</span>
-                        <ul>
-                            <li>Developed backend microservices for financial apps using Java & Spring.</li>
-                            <li>Integrated REST APIs and Kafka for real-time market data.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Analytics Lead | UBC SCI Team</h4>
-                        <span class="date">2022 - 2023</span>
-                        <ul>
-                            <li>Analyzed participation data using Python to increase event turnout by 15%.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="resume" class="section-block resume-section">
-            <h3 class="section-label">Resume</h3>
-            <div class="resume-container">
-                <div class="resume-paper">
-                    <div class="paper-header">
-                        <h5>Shubham Carter</h5>
-                        <div class="lines"></div>
-                    </div>
-                    <div class="paper-body">
-                        <div class="line long"></div>
-                        <div class="line medium"></div>
-                        <div class="line short"></div>
-                        <br>
-                        <div class="line long"></div>
-                        <div class="line long"></div>
-                    </div>
-                </div>
-                
-                <div class="resume-actions">
-                    <h4>Full Credentials</h4>
-                    <p>Download the detailed PDF version.</p>
-                    <a href="assets/documents/Shubham_resume.pdf" download class="btn-download">Download Resume</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="contact">
-        <h3 class="text-center">Get in Touch</h3>
-        <div class="social-icons">
-            <a href="mailto:sharma.m.shubhamx@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/shubham-sharma"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="copyright">Open to opportunities in Data, AI, and Quantitative roles.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
