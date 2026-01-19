@@ -1,148 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Shubham Sharma</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Floating Sidebar - Overlapping photo on right -->
-<nav class="floating-nav">
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <div class="container">
+        
+        <section id="about" class="hero">
+            <div class="hero-layout">
+                
+                <div class="hero-text">
+                    <h1>Alex Carter</h1>
+                    <span class="role">Data Analyst | ML / AI Engineer</span>
 
-<!-- HERO - Full Screen with Name, Photo, and About Me -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>Shubham Sharma</h1>
-    <p class="subtitle">Data Scientist | ML / AI Engineer</p>
+                    <div class="about-block">
+                        <span class="section-label">About Me</span>
+                        <p class="bio-text">
+                            I'm a data-driven professional specializing in machine learning and quantitative analysis, focused on transforming insights into impactful solutions.
+                        </p>
+                    </div>
+                </div>
 
-    <h3>About Me</h3>
-    <p>
-      I'm a data-driven professional specializing in machine learning and quantitative analysis, 
-      focused on transforming insights into impactful solutions. Currently working on Generative AI 
-      for Infant Affective Computing at the University at Buffalo.
-    </p>
-  </div>
+                <div class="photo-spot">
+                    <span class="placeholder-text">[ Photo Placeholder ]</span>
+                </div>
 
-  <div class="hero-image">
-    <img src="assets/profile.jpg" alt="Shubham Sharma" />
-  </div>
-</section>
+                <nav class="side-nav">
+                    <a href="#projects" class="nav-pill">Projects</a>
+                    <a href="#experience" class="nav-pill">Experience</a>
+                    <a href="#skills" class="nav-pill">Skills</a>
+                    <a href="#contact" class="nav-pill">Contact</a>
+                </nav>
+            </div>
+        </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="tags">
-    <span>Python</span>
-    <span>SQL</span>
-    <span>TensorFlow</span>
-    <span>Scikit-Learn</span>
-    <span>Pandas</span>
-    <span>PyTorch</span>
-    <span>Machine Learning</span>
-    <span>Data Visualization</span>
-    <span>Statistical Analysis</span>
-    <span>Quantitative Finance</span>
-  </div>
-</section>
+        <section id="skills" class="content-section">
+            <div class="section-label">Skills</div>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Scikit-Learn</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Statistical Analysis</span>
+                <span class="skill-tag">Quantitative Finance</span>
+            </div>
+        </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">
-      <h4>BetGenie: Baseball AI</h4>
-      <p>Time Series Forecasting, Python</p>
-      <a href="#" class="btn-small">View Project</a>
+        <section id="projects" class="content-section">
+            <h2 class="section-header">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3 class="project-title">Stock Prediction Model</h3>
+                        <p class="project-sub">Time Series Forecasting, Python</p>
+                    </div>
+                    <a href="#" class="btn-view">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3 class="project-title">AI Image Classifier</h3>
+                        <p class="project-sub">Deep Learning, TensorFlow</p>
+                    </div>
+                    <a href="#" class="btn-view">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3 class="project-title">Financial Data Dashboard</h3>
+                        <p class="project-sub">React, D3.js</p>
+                    </div>
+                    <a href="#" class="btn-view">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section">
+            <h2 class="section-header">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="job-header">
+                        <span class="job-title">Senior Data Analyst</span>
+                        <span class="job-meta">| TechCorp 2020 - Present</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Lead data analytics initiatives.</li>
+                        <li>Developed predictive models.</li>
+                        <li>Optimized business strategies.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="job-header">
+                        <span class="job-title">Machine Learning Intern</span>
+                        <span class="job-meta">| FinTech Solutions 2018 - 2019</span>
+                    </div>
+                    <ul class="job-desc">
+                        <li>Assisted in ML model development.</li>
+                        <li>Conducted data research and analysis.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="content-section">
+            <h2 class="section-header">Resume</h2>
+            <div class="resume-wrapper">
+                <div class="paper-icon"></div>
+                
+                <a href="resume.pdf" target="_blank" class="download-btn">Download Resume</a>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <h2>Get in Touch</h2>
+            <div class="socials">
+                <div class="social-circle">✉</div>
+                <div class="social-circle">in</div>
+                <div class="social-circle">git</div>
+            </div>
+            <p>Open to opportunities in data, AI, and quantitative roles.</p>
+        </footer>
+
     </div>
-    <div class="card">
-      <h4>MeetingMetric AI</h4>
-      <p>Deep Learning, TensorFlow</p>
-      <a href="#" class="btn-small">View Project</a>
-    </div>
-    <div class="card">
-      <h4>Mathquiz App</h4>
-      <p>React, D3.js</p>
-      <a href="#" class="btn-small">View Project</a>
-    </div>
-  </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="item">
-      <h4>Research Assistant | University at Buffalo</h4>
-      <span>2025 - Present</span>
-      <ul>
-        <li>Developing Generative AI models for Infant Affective Computing.</li>
-        <li>Leveraging LLMs to evaluate research and filter insights.</li>
-      </ul>
-    </div>
-    <div class="item">
-      <h4>Software Engineering Intern | JPMorgan Chase</h4>
-      <span>May 2025</span>
-      <ul>
-        <li>Developed backend microservices for financial apps using Java & Spring.</li>
-        <li>Integrated REST APIs and Kafka for real-time market data.</li>
-      </ul>
-    </div>
-    <div class="item">
-      <h4>Analytics Lead | UBC SCI Team</h4>
-      <span>2022 - 2023</span>
-      <ul>
-        <li>Analyzed participation data using Python to increase event turnout by 15%.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- RESUME -->
-<section id="resume" class="section resume">
-  <h2>Resume</h2>
-  <div class="resume-container">
-    <div class="resume-thumbnail">
-      <object data="assets/resume.pdf" type="application/pdf" class="resume-pdf">
-        <div class="resume-placeholder">
-          <i class="fas fa-file-pdf"></i>
-          <p>Shubham Sharma</p>
-          <p class="resume-label">Resume</p>
-        </div>
-      </object>
-    </div>
-    <div class="resume-actions">
-      <h4>Full Credentials</h4>
-      <p>Download the detailed PDF version.</p>
-      <a href="assets/resume.pdf" download>Download Resume</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-  <h2>Get in Touch</h2>
-  <div class="social-icons">
-    <a href="mailto:sharma.m.shubhamx@gmail.com" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/shubham-sharma-273ab4216/" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/sshubh4" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-  <p class="copyright">Open to opportunities in data, AI, and quantitative roles.</p>
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
