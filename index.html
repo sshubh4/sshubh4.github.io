@@ -3,177 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Sharma | Quantitative Finance & ML Engineer</title>
+    <title>Shubham Sharma | Quant Data Engineer & ML</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        
-        <section id="about" class="hero">
-            <div class="hero-layout">
-                
-                <div class="hero-text">
-                    <h1>Shubham Sharma</h1>
-                    <span class="role">Quant Data Engineer | AI for Financial Markets</span>
-
-                    <div class="about-block">
-                        <span class="section-label">About Me</span>
-                        <p class="bio-text">
-                            I'm fascinated by financial markets where rigorous mathematics meets real-world data. I build AI and machine learning solutions to uncover market patterns, design systems for quantitative trading, and bridge the gap between algorithms and practical market applications.
-                        </p>
-                    </div>
+    <div class="layout">
+        <!-- LEFT SIDEBAR (Fixed) -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <!-- Profile (no name) -->
+                <div class="profile-block">
+                    <p class="profile-edu"><strong class="profile-edu-main">University at Buffalo</strong><br><span class="profile-edu-state">The State University of New York</span></p>
+                    <p class="profile-edu-sub">BS in Computer Science with Certificate in Data Intensive Computing</p>
+                    <p class="profile-role">Aspiring AI/ML Engineer</p>
+                    <p class="profile-role">Aspiring Quant Data Engineer</p>
                 </div>
 
-                <div class="photo-spot">
-                    <span class="placeholder-text">[ Photo Placeholder ]</span>
+                <!-- Personal Details -->
+                <div class="details-block">
+                    <div class="detail-row"><span class="detail-label">Residence:</span> New York, United States</div>
+                    <div class="detail-row"><span class="detail-label">City:</span> Buffalo</div>
                 </div>
 
-                <nav class="side-nav">
-                    <a href="#projects" class="nav-pill">Projects</a>
-                    <a href="#experience" class="nav-pill">Experience</a>
-                    <a href="#skills" class="nav-pill">Skills</a>
-                    <a href="#contact" class="nav-pill">Contact</a>
-                </nav>
-            </div>
-        </section>
-
-        <section id="about-detailed" class="content-section">
-            <h2 class="section-header">About Me</h2>
-            <div style="max-width: 700px; color: #b0b0b0; line-height: 1.8; font-size: 0.95rem;">
-                <p style="margin-bottom: 20px;">
-                    I'm drawn to financial markets because they represent a fascinating intersection of rigorous mathematics, messy real-world data, and human decision-making. While predicting market movements is deceptively hard—even well-resourced firms struggle to beat broad benchmarks—recent advances in AI and machine learning have opened new possibilities for solving these problems with greater precision.
-                </p>
-                <p style="margin-bottom: 20px;">
-                    My background combines technical depth with practical problem-solving. I'm completing a Bachelor of Science in Computer Science with a Certificate in Data Intensive Computing at the University at Buffalo, with coursework in machine learning, statistical analytics, systems programming, and data-intensive computing. This foundation has equipped me to design models that leverage data, adapt to dynamic environments, and scale to handle large, time-sensitive datasets.
-                </p>
-                <p style="margin-bottom: 20px;">
-                    In my research and project work, I've applied these skills to real challenges. In my baseball analytics project (BetGenie), I designed a backtesting agent inspired by quantitative trading environments to evaluate feature combinations and surface composite metrics that improved predictive accuracy while reducing overfitting. In my infant affective computing research, I use large language models to filter and evaluate research literature at scale. Through virtual internships with JPMorgan Chase and Tata Group, I've gained exposure to financial systems, risk frameworks, and data-driven decision making.
-                </p>
-                <p>
-                    My career goal is to become a Quant Data Engineer—working at the intersection of AI and finance to find patterns, solve problems, and build systems that navigate uncertainty. I'm committed to translating algorithms into real-world market applications while maintaining deep understanding of market structure, risk, and practical model performance.
-                </p>
-            </div>
-        </section>
-
-        <section id="skills" class="content-section">
-            <div class="section-label">Skills</div>
-            <div class="skills-container">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">Go</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">Scikit-Learn</span>
-                <span class="skill-tag">OpenCV</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">NumPy</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">NLP & Transformers</span>
-                <span class="skill-tag">AWS & Azure</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Git</span>
-            </div>
-        </section>
-
-        <section id="projects" class="content-section">
-            <h2 class="section-header">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3 class="project-title">Mathquiz: NLP Application</h3>
-                        <p class="project-sub">OCR, TensorFlow, Python | 3rd Place Award</p>
-                    </div>
-                    <a href="#" class="btn-view">View Project</a>
+                <!-- Programming Skills (progress bars) -->
+                <div class="skills-block">
+                    <h3 class="block-title">Programming Skills</h3>
+                    <div class="skill-bar-item"><span class="skill-name">Python</span><span class="skill-pct">95%</span><div class="bar"><div class="bar-fill" style="width: 95%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">Java</span><span class="skill-pct">85%</span><div class="bar"><div class="bar-fill" style="width: 85%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">SQL</span><span class="skill-pct">90%</span><div class="bar"><div class="bar-fill" style="width: 90%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">TensorFlow</span><span class="skill-pct">80%</span><div class="bar"><div class="bar-fill" style="width: 80%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">React</span><span class="skill-pct">75%</span><div class="bar"><div class="bar-fill" style="width: 75%"></div></div></div>
                 </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3 class="project-title">MeetingMetric: AI Meeting Tool</h3>
-                        <p class="project-sub">HuggingFace, NLP, Transformers</p>
-                    </div>
-                    <a href="#" class="btn-view">View Project</a>
+
+                <!-- Other Skills/Tools -->
+                <div class="tools-block">
+                    <h3 class="block-title">Other Skills</h3>
+                    <div class="tool-item">✓ PyTorch, scikit-learn, Hugging Face</div>
+                    <div class="tool-item">✓ AWS, Azure, Google Cloud</div>
+                    <div class="tool-item">✓ MySQL, PostgreSQL, MongoDB</div>
+                    <div class="tool-item">✓ Git, Jupyter, Power BI, Tableau</div>
                 </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3 class="project-title">BetGenie: Baseball AI App</h3>
-                        <p class="project-sub">LLaMA 3, Feature Engineering, ML</p>
-                    </div>
-                    <a href="#" class="btn-view">View Project</a>
+
+                <!-- Download Resume -->
+                <a href="resume.pdf" target="_blank" class="btn-download">DOWNLOAD RESUME →</a>
+
+                <!-- Social Icons -->
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/shubham-sharma-273ab4216/" target="_blank" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="mailto:sharma.m.shubhamx@gmail.com" class="social-icon social-icon--email" aria-label="Email">✉</a>
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <section id="experience" class="content-section">
-            <h2 class="section-header">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="job-header">
-                        <span class="job-title">Research Undergraduate Student Assistant</span>
-                        <span class="job-meta">| University at Buffalo June 2025 - Present</span>
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- Right Vertical Nav (vertical alignment, letters rotated) -->
+            <nav class="vert-nav">
+                <button type="button" class="nav-profile-icon" aria-label="View profile photo" id="nav-profile-btn">
+                    <img src="assets/profile.png" alt="Shubham Sharma">
+                </button>
+                <a href="#home" class="vert-tab active">HOME</a>
+                <a href="#skills" class="vert-tab">SKILLS</a>
+                <a href="#resume" class="vert-tab">RESUME</a>
+                <a href="#experience" class="vert-tab">EXPERIENCE</a>
+                <a href="#projects" class="vert-tab">PROJECTS</a>
+                <a href="#certificates" class="vert-tab">CERTIFICATES</a>
+            </nav>
+
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-inner">
+                        <h2 class="hero-title">Shubham Sharma</h2>
+                        <div class="hero-bio-box">
+                            <h3 class="hero-bio-title">About Me</h3>
+                            <p class="hero-bio">
+                                I am a Computer Science student at the University at Buffalo specializing in
+                                Data Intensive Computing. My passion lies in building intelligent systems that
+                                help people make better decisions faster in high stakes environments.<br><br>
+                                With hands-on experience spanning backend software engineering, AI-driven
+                                data analytics, and quantitative backtesting. I enjoy working at the
+                                intersection of technical execution and domain judgment. I am currently
+                                seeking roles where I can combine my skills in Python, Java, cloud platforms,
+                                and machine learning to solve complex problems and navigate uncertainty.
+                            </p>
+                        </div>
                     </div>
-                    <ul class="job-desc">
-                        <li>Supporting Infant Affective Computing research using generative AI.</li>
-                        <li>Leveraged LLMs to identify and evaluate relevant research literature.</li>
-                        <li>Working to advance emotion recognition technologies for caregiving applications.</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="job-header">
-                        <span class="job-title">Advanced Software Engineering Virtual Internship</span>
-                        <span class="job-meta">| JPMorgan Chase May 2025</span>
+                    <div class="hero-profile-wrap">
+                        <img src="assets/profile.png" alt="Shubham Sharma" class="hero-profile-img">
                     </div>
-                    <ul class="job-desc">
-                        <li>Developed backend microservices in Java and Spring for financial applications.</li>
-                        <li>Integrated REST APIs and Kafka-based event streaming for real-time market data.</li>
-                        <li>Utilized Maven and SQL databases for secure financial data processing.</li>
-                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="job-header">
-                        <span class="job-title">Data Analytics Job Simulation</span>
-                        <span class="job-meta">| Tata Group June 2025</span>
+            </section>
+
+            <!-- My Skills (includes mobile profile block on small screens) -->
+            <section id="skills" class="services-section">
+                <div class="mobile-profile">
+                    <div class="mobile-profile-edu">
+                        <p><strong class="profile-edu-main">University at Buffalo</strong><br><span class="profile-edu-state">The State University of New York</span></p>
+                        <p class="profile-edu-sub">BS in Computer Science with Certificate in Data Intensive Computing</p>
+                        <p class="profile-role">Aspiring AI/ML Engineer</p>
+                        <p class="profile-role">Aspiring Quant Data Engineer</p>
                     </div>
-                    <ul class="job-desc">
-                        <li>Performed EDA using GenAI tools for data quality assessment.</li>
-                        <li>Designed no-code predictive framework with agentic AI integration.</li>
-                        <li>Developed AI-driven collections strategy with ethical compliance considerations.</li>
-                    </ul>
+                    <div class="mobile-profile-details">
+                        <div class="detail-row"><span class="detail-label">Residence:</span> New York, United States</div>
+                        <div class="detail-row"><span class="detail-label">City:</span> Buffalo</div>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <h2 class="section-title">My Skills</h2>
+                <div class="mobile-skills-block">
+                    <h3 class="block-title">Programming Skills</h3>
+                    <div class="skill-bar-item"><span class="skill-name">python</span><span class="skill-pct">95%</span><div class="bar"><div class="bar-fill" style="width: 95%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">java</span><span class="skill-pct">85%</span><div class="bar"><div class="bar-fill" style="width: 85%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">sql</span><span class="skill-pct">90%</span><div class="bar"><div class="bar-fill" style="width: 90%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">tensorflow</span><span class="skill-pct">80%</span><div class="bar"><div class="bar-fill" style="width: 80%"></div></div></div>
+                    <div class="skill-bar-item"><span class="skill-name">react</span><span class="skill-pct">75%</span><div class="bar"><div class="bar-fill" style="width: 75%"></div></div></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Machine Learning</h3>
+                        <p>Building predictive models, NLP systems, and recommendation engines using TensorFlow, PyTorch, and scikit-learn.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Data Engineering</h3>
+                        <p>Designing data pipelines, ETL processes, and scalable architectures with SQL, NoSQL, and cloud platforms.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Quantitative Analytics</h3>
+                        <p>Applying statistical methods, feature engineering, and backtesting for data-driven decision making.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Research & AI</h3>
+                        <p>Advancing AI research in affective computing, LLMs, and generative models for practical applications.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Software Development</h3>
+                        <p>Building microservices, REST APIs, and full-stack applications with Java, Spring, and React.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Data Visualization</h3>
+                        <p>Creating dashboards and reports with Power BI, Tableau, and matplotlib for actionable insights.</p>
+                    </div>
+                </div>
+                <div class="mobile-tools-block">
+                    <h3 class="block-title">Other Skills</h3>
+                    <div class="tool-item">✓ PyTorch, scikit-learn, Hugging Face</div>
+                    <div class="tool-item">✓ AWS, Azure, Google Cloud</div>
+                    <div class="tool-item">✓ MySQL, PostgreSQL, MongoDB</div>
+                    <div class="tool-item">✓ Git, Jupyter, Power BI, Tableau</div>
+                </div>
+            </section>
 
-        <section id="resume" class="content-section">
-            <h2 class="section-header">Resume</h2>
-            <div class="resume-wrapper">
-                <div class="paper-icon"></div>
-                
-                <a href="resume.pdf" target="_blank" class="download-btn">Download Resume</a>
-            </div>
-        </section>
+            <!-- Resume -->
+            <section id="resume" class="resume-preview-section">
+                <div class="resume-section-header">
+                    <h2 class="section-title">Resume</h2>
+                    <a href="resume.pdf" target="_blank" class="btn-download btn-download--resume">DOWNLOAD RESUME →</a>
+                </div>
+                <div class="resume-preview-wrap">
+                    <div id="resume-pdf-container" class="resume-pdf-container"></div>
+                </div>
+            </section>
 
-        <footer id="contact" class="footer">
-            <h2>Get in Touch</h2>
-            <div class="socials">
-                <a href="mailto:sharma.m.shubhamx@gmail.com" class="social-circle">✉</a>
-                <a href="https://www.linkedin.com/in/shubham-sharma" target="_blank" class="social-circle">in</a>
-            </div>
-            <p>sharma.m.shubhamx@gmail.com | 484-830-0363</p>
-        </footer>
+            <!-- Experience Section -->
+            <section id="experience" class="content-section experience-section">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <h3>Chair, Statistics and Marketing Committee (Vancouver)</h3>
+                        <p class="exp-meta">UBC SCI Team – Undergraduate Science Student Council – UBC September 2022 – April 2023</p>
+                        <ul>
+                            <li>Led a team to analyze student engagement with SCI Team events using Google Analytics, Jupyter Notebook, and UBC Qualtrics.</li>
+                            <li>Identified inconsistent engagement in SCI Team events, limiting the reach of leadership and career development initiatives.</li>
+                            <li>Analyzed participation data and increased event turnout by 15%, directly supporting the mission to foster academic growth and enhance the student experience through tailored programming.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3>Research Undergraduate Student Assistant (Buffalo)</h3>
+                        <p class="exp-meta">School of Engineering and Applied Sciences, University at Buffalo June 2025 – Current</p>
+                        <ul>
+                            <li>Supporting a research project to advance Infant Affective Computing by exploring how generative AI can create virtual infants to aid caregiving and early disorder detection.</li>
+                            <li>Leveraging advanced text-based large language models (LLMs) to efficiently identify, filter, and critically evaluate relevant research, ensuring high-quality and reliable insights.</li>
+                            <li>Aiming to bridge gaps in current infant emotion recognition technologies to better support parents, caregivers, and healthcare providers.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3>Advanced Software Engineering Virtual Internship (Remote)</h3>
+                        <p class="exp-meta">JPMorgan Chase – Forage Virtual Experience Program May 2025</p>
+                        <ul>
+                            <li>Developed backend microservices for financial applications using Java and Spring, focusing on secure, high-throughput transaction processing.</li>
+                            <li>Integrated REST APIs and Kafka-based event streaming to support real-time market data flow and risk management systems.</li>
+                            <li>Utilized Maven for dependency management and SQL databases to ensure efficient storage and querying of sensitive financial data in compliance with industry regulations.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-item">
+                        <h3>Data Analytics Job Simulation (Remote)</h3>
+                        <p class="exp-meta">Tata Group – Forage Virtual Experience Program June 2025</p>
+                        <ul>
+                            <li>Completed a job simulation involving AI-powered data analytics and strategy development for the Financial Services team at Tata iQ.</li>
+                            <li>Performed exploratory data analysis (EDA) using GenAI tools to evaluate data quality and identify key risk indicators for predictive modeling.</li>
+                            <li>Designed a no-code predictive framework and AI-driven collections strategy, integrating GenAI logic, agentic AI, and ethical compliance for scalable deployment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Projects Section -->
+            <section id="projects" class="content-section projects-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h3>Mathquiz: NLP Application</h3>
+                        <ul>
+                            <li>Mission: Simplify how students find solutions to math problems without juggling multiple resources online.</li>
+                            <li>Solution: Developed an NLP app leveraging Optical Character Recognition (OCR) with Python and TensorFlow to convert handwritten questions into machine-readable text and search for top-rated answers.</li>
+                            <li>Unique impact: Streamlined learning through an intuitive upload interface; won 3rd place in an inter-school competition sponsored by Xiaomi.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>MeetingMetric: AI Meeting Productivity Tool</h3>
+                        <ul>
+                            <li>Mission: Enable HR teams to measure engagement and productivity during remote meetings where tracking individual contributions is challenging.</li>
+                            <li>Solution: Designed an AI tool integrating HuggingFace transformer-based language models to analyze meeting transcripts, scoring participant engagement and sentiment on a scale from 0 to 1.</li>
+                            <li>Unique impact: Delivered a dynamic dashboard to monitor meeting trends, enabling data-driven improvements to workforce engagement and productivity.</li>
+                        </ul>
+                    </div>
+                    <div class="project-item">
+                        <h3>BetGenie: Baseball AI Prediction App</h3>
+                        <ul>
+                            <li>Mission: Provide affordable and accurate baseball analytics amidst costly and inconsistent data sources.</li>
+                            <li>Solution: Built an AI-driven app utilizing custom feature engineering, clustering-based labeling, and integration of LLaMA 3 large language models to analyze player stats, park factors, weather, and game conditions.</li>
+                            <li>Unique impact: Enabled precise, data-driven game predictions and insights for fans and analysts, delivering value unavailable in many existing platforms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certificates Section -->
+            <section id="certificates" class="certificates-section">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-carousel-wrap">
+                    <button class="cert-chevron cert-chevron--left" aria-label="Scroll certificates left" title="Scroll left">
+                        ‹
+                    </button>
+                    <button class="cert-chevron cert-chevron--right" aria-label="Scroll certificates right" title="Scroll right">
+                        ›
+                    </button>
+                    <div class="certificates-fade certificates-fade--left"></div>
+                    <div class="certificates-fade certificates-fade--right"></div>
+                    <div class="certificates-row" id="certificates-row" role="list">
+                        <!-- Cards rendered by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p class="footer-contact">sharma.m.shubhamx@gmail.com | 484-830-0363</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/shubham-sharma-273ab4216/" target="_blank" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="mailto:sharma.m.shubhamx@gmail.com" class="social-icon social-icon--email" aria-label="Email">✉</a>
+                </div>
+            </footer>
+        </main>
     </div>
 
+    <!-- Profile Photo Preview Modal -->
+    <div id="profile-modal" class="profile-modal" role="dialog" aria-modal="true" aria-label="Profile photo preview" hidden>
+        <div class="profile-modal-overlay"></div>
+        <div class="profile-modal-content">
+            <button type="button" class="profile-modal-close" aria-label="Close profile preview" title="Close">×</button>
+            <div class="profile-modal-img-wrap">
+                <img src="assets/profile.png" alt="Shubham Sharma" class="profile-modal-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title" hidden>
+        <div class="cert-modal-overlay"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" aria-label="Close certificate preview" title="Close">×</button>
+            <div class="cert-modal-pdf-wrap">
+                <iframe id="cert-modal-pdf" title="Certificate preview"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="certificates.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
