@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (!containerWidth) containerWidth = Math.min(700, window.innerWidth - 150);
 
             pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-            const pdf = await pdfjsLib.getDocument('resume.pdf').promise;
+            const pdf = await pdfjsLib.getDocument('resume.pdf?v=20260402').promise;
             const numPages = pdf.numPages;
 
             for (let i = 1; i <= numPages; i++) {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         try {
             await renderResume();
         } catch (err) {
-            pdfContainer.innerHTML = '<p class="resume-fallback">Unable to load resume. <a href="resume.pdf" target="_blank">Download resume</a></p>';
+            pdfContainer.innerHTML = '<p class="resume-fallback">Unable to load resume. <a href="resume.pdf?v=20260402" target="_blank">Download resume</a></p>';
         }
     }
 
