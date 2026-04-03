@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "title": "Machine Learning & NLP",
+      "text": "Supervised and unsupervised learning, neural networks, gradient boosting, feature engineering and selection. NLP with transformers and BERT, sentence embeddings, and classical ML with TensorFlow, PyTorch, and scikit-learn."
+    },
+    {
+      "title": "Data Engineering",
+      "text": "Designing pipelines and scalable data workflows with SQL and NoSQL (MySQL, PostgreSQL, SQLite, MongoDB, Supabase), vector search with FAISS, and cloud-backed processing."
+    },
+    {
+      "title": "LLMs, RAG & Agents",
+      "text": "Building with LangChain, LangGraph, and LLM APIs (Claude, OpenAI): RAG, prompt engineering, vector search, and agent-style workflows for production-style applications."
+    },
+    {
+      "title": "Full-Stack & APIs",
+      "text": "End-to-end apps with React, Node.js, Express, and SQLite; REST APIs and integrations such as Microsoft Graph API. Java and Spring for backend microservices and high-throughput systems."
+    },
+    {
+      "title": "Cloud & DevOps",
+      "text": "AWS Lambda, EC2, and cloud architecture patterns; Microsoft Azure and Google Cloud VMs; Git, GitHub Actions, and deployment on platforms like Render."
+    },
+    {
+      "title": "Analytics & Visualization",
+      "text": "Exploratory analysis with Pandas and NumPy; dashboards and reporting with Power BI, Tableau, and matplotlib for clear, actionable insights."
+    }
+  ]
+}

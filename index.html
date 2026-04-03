@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <title>Shubham Sharma | Quant Data Engineer & ML</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260404">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -123,7 +125,8 @@
                     <div class="skill-bar-item"><span class="skill-name">tensorflow</span><span class="skill-pct">82%</span><div class="bar"><div class="bar-fill" style="width: 82%"></div></div></div>
                     <div class="skill-bar-item"><span class="skill-name">react</span><span class="skill-pct">78%</span><div class="bar"><div class="bar-fill" style="width: 78%"></div></div></div>
                 </div>
-                <div class="services-grid">
+                <div class="services-grid" id="skills-services-grid" aria-busy="true"></div>
+                <template id="skills-cards-fallback">
                     <div class="service-card">
                         <h3>Machine Learning & NLP</h3>
                         <p>Supervised and unsupervised learning, neural networks, gradient boosting, feature engineering and selection. NLP with transformers and BERT, sentence embeddings, and classical ML with TensorFlow, PyTorch, and scikit-learn.</p>
@@ -148,7 +151,7 @@
                         <h3>Analytics & Visualization</h3>
                         <p>Exploratory analysis with Pandas and NumPy; dashboards and reporting with Power BI, Tableau, and matplotlib for clear, actionable insights.</p>
                     </div>
-                </div>
+                </template>
                 <div class="mobile-tools-block">
                     <h3 class="block-title">Other Skills</h3>
                     <div class="tool-item">✓ R, Go, JavaScript, MATLAB · PyTorch, scikit-learn, OpenCV, Pandas, NumPy, matplotlib</div>
@@ -294,7 +297,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="certificates.js"></script>
-    <script src="script.js"></script>
+    <script src="certificates.js?v=20260404"></script>
+    <script src="script.js?v=20260404"></script>
 </body>
 </html>

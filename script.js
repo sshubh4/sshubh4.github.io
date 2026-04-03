@@ -1,4 +1,38 @@
+function escapeHtml(text) {
+    const s = String(text);
+    return s
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
+    // Skills cards: load from network (bypasses cached index.html); fallback if offline
+    const skillsGrid = document.getElementById('skills-services-grid');
+    const skillsFallbackTpl = document.getElementById('skills-cards-fallback');
+    if (skillsGrid) {
+        try {
+            const res = await fetch(`skills.json?t=${Date.now()}`, { cache: 'no-store' });
+            if (!res.ok) throw new Error('skills fetch failed');
+            const data = await res.json();
+            const cards = Array.isArray(data.cards) ? data.cards : [];
+            skillsGrid.innerHTML = cards
+                .map(
+                    (card) =>
+                        `<div class="service-card"><h3>${escapeHtml(card.title)}</h3><p>${escapeHtml(card.text)}</p></div>`
+                )
+                .join('');
+            skillsGrid.setAttribute('aria-busy', 'false');
+        } catch {
+            if (skillsFallbackTpl && skillsFallbackTpl.content) {
+                skillsGrid.innerHTML = '';
+                skillsGrid.append(...skillsFallbackTpl.content.cloneNode(true).children);
+            }
+            skillsGrid.setAttribute('aria-busy', 'false');
+        }
+    }
+
     // 0. Render PDF resume preview (scaled to fit width, scrollable)
     const pdfContainer = document.getElementById('resume-pdf-container');
     if (pdfContainer) {
